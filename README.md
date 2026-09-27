@@ -1,12 +1,12 @@
-# 🏠 Airbnb End-to-End Data Engineering Project
+## Airbnb End-to-End Data Engineering Project
 
-## 📋 Overview
+## Overview
 
 This project implements a complete end-to-end data engineering pipeline for Airbnb data using modern cloud technologies. The solution demonstrates best practices in data warehousing, transformation, and analytics using **Snowflake**, **dbt (Data Build Tool)**, and **AWS**.
 
 The pipeline processes Airbnb listings, bookings, and hosts data through a medallion architecture (Bronze → Silver → Gold), implementing incremental loading, slowly changing dimensions (SCD Type 2), and creating analytics-ready datasets.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Data Flow
 ```
@@ -29,7 +29,7 @@ Source Data (CSV) → AWS S3 → Snowflake (Staging) → Bronze Layer → Silver
   - Jinja templating
   - Testing and documentation
 
-## 📊 Data Model
+## Data Model
 
 ### Medallion Architecture
 
@@ -119,7 +119,7 @@ AWS_DBT_Snowflake/
     └── seeds/                          # Static reference data
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -240,7 +240,7 @@ AWS_DBT_Snowflake/
    dbt build  # Runs models, tests, and snapshots
    ```
 
-## 🎯 Key Features
+## Key Features
 
 ### 1. Incremental Loading
 Bronze and silver models use incremental materialization to process only new/changed data:
@@ -315,24 +315,7 @@ dbt automatically tracks data lineage, showing:
 - **Snowflake Documentation**: https://docs.snowflake.com/
 - **dbt Best Practices**: https://docs.getdbt.com/guides/best-practices
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is part of a data engineering portfolio demonstration.
-
-## 👤 Author
-
-**Project**: Airbnb Data Engineering Pipeline  
-**Technologies**: Snowflake, dbt, AWS, Python
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -350,7 +333,7 @@ This project is part of a data engineering portfolio demonstration.
    - Run `dbt run --full-refresh` to rebuild from scratch
    - Verify source data timestamps
 
-## 📊 Future Enhancements
+## Future Enhancements
 
 - [ ] Add data quality dashboards
 - [ ] Implement CI/CD pipeline
